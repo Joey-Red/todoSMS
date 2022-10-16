@@ -1,0 +1,88 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 12px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px;
+}
+.menu button {
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.animContainer {
+  padding: 12px;
+  display: flex;
+  width: 80%;
+  position: relative;
+}
+.animContainer .animText {
+  margin-left: 4px;
+  font-size: 1.1rem;
+  align-content: center;
+  display: flex;
+  align-items: center;
+}
+.animContainer .navFa {
+  display: flex;
+  float: left;
+}
+
+.toggle:hover {
+  cursor: pointer;
+}
+
+.faIconContainer {
+  display: flex;
+  align-self: center;
+}
+
+input {
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  border-radius: 8px;
+  border: none;
+}
+
+.deleteButton {
+  transform: rotate(0deg);
+  transition: 300ms linear all;
+}
+
+.deleteButton:hover {
+  cursor: pointer;
+  color: #ff6961;
+  transition: 300ms linear all;
+  transform: rotate(45deg);
+}
+
+.mediaButton {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  z-index: 999;
+}
+
+.mediaButton:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

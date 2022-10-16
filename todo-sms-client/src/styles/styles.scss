@@ -1,0 +1,104 @@
+// Variables
+$primary-color: #040607;
+$primary-padding: 12px;
+// Reset
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+// Mixins
+@mixin flexAndCenter() {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+@mixin defButton {
+    border: none;
+    padding: $primary-padding;
+    border-radius: 12px;
+}
+.main {
+    @include flexAndCenter();
+    flex-direction: column;
+    text-align: center;
+    padding: $primary-padding;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: $primary-padding;
+    button {
+        @include defButton();
+    }
+}
+.animContainer {
+    padding: $primary-padding;
+    display: flex;
+    width: 80%;
+    position: relative;
+    .animText {
+        margin-left: 4px;
+        font-size: 1.1rem;
+        align-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .navFa {
+        display: flex;
+        float: left;
+    }
+}
+// width: 100%;
+// padding: $primary-padding;
+// text-align: start;
+// transition: translate 1s;
+.toggle {
+    // transition: 300ms linear all;
+}
+.toggle:hover {
+    cursor: pointer;
+    // color: #49ad49;
+    // transition: 300ms linear all;
+    // transform: rotate(-45deg);
+}
+.active {
+    // transition: 300ms linear all;
+}
+.faIconContainer {
+    display: flex;
+    align-self: center;
+}
+input {
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    border-radius: 8px;
+    border: none;
+    // padding: 5px 4px 4px 4px;
+}
+.deleteButton {
+    transform: rotate(0deg);
+    transition: 300ms linear all;
+}
+.deleteButton:hover {
+    cursor: pointer;
+    color: #ff6961;
+    transition: 300ms linear all;
+    transform: rotate(45deg);
+}
+.mediaButton {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    z-index: 999;
+}
+.mediaButton:hover {
+    cursor: pointer;
+}
